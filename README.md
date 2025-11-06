@@ -108,9 +108,9 @@ caracteres el programa deberá retornar la secuencia de caracteres extraídos po
 
 Ejemplos:
 ```
-EAS*Y*QUE***ST***IO*N***  EASYQUESTION
-UN*IV*ERS*IDAD**  UNIVE
-COMPUTER*****S**CIEN**CE  COMPUTERS
+EAS*Y*QUE***ST***IO*N*** --> EASYQUESTION
+UN*IV*ERS*IDAD** --> UNIVE
+COMPUTER*****S**CIEN**CE --> COMPUTERS
 ```
 
 ```cpp
@@ -188,9 +188,9 @@ Elaborar una función basada en stack que tome un expresión sin el paréntesis 
 
 Ejemplo:
 ```markdown
-10 + 20) * 5 + 3)      (10 + 20) * (5 + 3) 
-10 +30) * 30)          (10 + 30) * (30)
-10 + 15) * 2 - 5))     ((10 + 15) * (2 - 5))
+10 + 20) * 5 + 3)    -->  (10 + 20) * (5 + 3) 
+10 +30) * 30)        -->  (10 + 30) * (30)
+10 + 15) * 2 - 5))   -->  ((10 + 15) * (2 - 5))
 ```
 
 ```cpp
