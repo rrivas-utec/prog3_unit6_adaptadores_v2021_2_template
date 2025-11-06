@@ -83,9 +83,9 @@ caracteres el programa deberá retornar la secuencia de caracteres extraídos po
 
 Ejemplos:
 ```
-EAS*Y*QUE***ST***IO*N***  SYEUQTSAONIE
-UN*IV*ERS*IDADDEINGENIE*RIAYTECN***OLOGIA  NVSENCE
-COMPUTER*****S**CIEN**CE  RETUPSMNE
+EAS*Y*QUE***ST***IO*N*** --> SYEUQTSAONIE
+UN*IV*ERS*IDADDEINGENIE*RIAYTECN***OLOGIA --> NVSENCE
+COMPUTER*****S**CIEN**CE --> RETUPSMNE
 ```
 
 ```cpp
