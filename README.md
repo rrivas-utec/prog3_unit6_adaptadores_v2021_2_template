@@ -150,7 +150,7 @@ cout << boolalpha << is_equation_balanced(text);
 
 ## Question #6 - find_in_stack (4 points)
 
-Utilizando la clase alumno_t que incluya los atributos `nombre, apellido y nota (int)`, se genere iterativamente. 
+Utilizando la clase alumno_t que incluya los atributos `nombre, apellido y nota (double)`, se genere iterativamente. 
 Elaborar un template de función `find_in_stack` que permita ubicar un valor basado en cualquier criterio.
 ```cpp
 T find_in_stack(stack<T> s, function<bool(T)> cmpr);
@@ -173,7 +173,7 @@ while (n-- > 0) {
     getline(cin, nombre);
     getline(cin, apellido);
     cin >> nota;
-    s1.push_back(alumno_t{nombre, apellido, nota});
+    s1.push(alumno_t{nombre, apellido, nota});
 }
 
 string name_tobe_found;
