@@ -1,4 +1,4 @@
-# Task #7: Estructuras Basicas Adaptadores  
+# Task #6: Estructuras Basicas Adaptadores  
 **course:** Programación Orientada a Objetos II  
 **unit:** 6  
 **cmake project:** poo2_unit6_adaptadores_poo_v2021_2
@@ -85,9 +85,9 @@ caracteres el programa deberá retornar la secuencia de caracteres extraídos po
 
 Ejemplos:
 ```
-EAS*Y*QUE***ST***IO*N***  SYEUQTSAONIE
-UN*IV*ERS*IDADDEINGENIE*RIAYTECN***OLOGIA  NVSENCE
-COMPUTER*****S**CIEN**CE  RETUPSMNE
+EAS*Y*QUE***ST***IO*N*** --> SYEUQTSAONIE
+UN*IV*ERS*IDADDEINGENIE*RIAYTECN***OLOGIA --> NVSENCE
+COMPUTER*****S**CIEN**CE --> RETUPSMNE
 ```
 
 ```cpp
@@ -110,9 +110,9 @@ caracteres el programa deberá retornar la secuencia de caracteres extraídos po
 
 Ejemplos:
 ```
-EAS*Y*QUE***ST***IO*N***  EASYQUESTION
-UN*IV*ERS*IDAD**  UNIVE
-COMPUTER*****S**CIEN**CE  COMPUTERS
+EAS*Y*QUE***ST***IO*N*** --> EASYQUESTION
+UN*IV*ERS*IDAD** --> UNIVE
+COMPUTER*****S**CIEN**CE --> COMPUTERS
 ```
 
 ```cpp
@@ -152,7 +152,7 @@ cout << boolalpha << is_equation_balanced(text);
 
 ## Question #6 - find_in_stack (4 points)
 
-Utilizando la clase alumno_t que incluya los atributos `nombre, apellido y nota (int)`, se genere iterativamente. 
+Utilizando la clase alumno_t que incluya los atributos `nombre, apellido y nota (double)`, se genere iterativamente. 
 Elaborar un template de función `find_in_stack` que permita ubicar un valor basado en cualquier criterio.
 ```cpp
 T find_in_stack(utec::stack<T> s, function<bool(T)> cmpr);
@@ -175,7 +175,7 @@ while (n-- > 0) {
     getline(cin, nombre);
     getline(cin, apellido);
     cin >> nota;
-    s1.push_back(alumno_t{nombre, apellido, nota});
+    s1.push(alumno_t{nombre, apellido, nota});
 }
 
 string name_tobe_found;
@@ -189,9 +189,9 @@ Elaborar una función basada en stack que tome un expresión sin el paréntesis 
 
 Ejemplo:
 ```markdown
-10 + 20) * 5 + 3)      (10 + 20) * (5 + 3) 
-10 +30) * 30)          (10 + 30) * (30)
-10 + 15) * 2 - 5))     ((10 + 15) * (2 - 5))
+10 + 20) * 5 + 3)    -->  (10 + 20) * (5 + 3) 
+10 +30) * 30)        -->  (10 + 30) * (30)
+10 + 15) * 2 - 5))   -->  ((10 + 15) * (2 - 5))
 ```
 
 ```cpp
