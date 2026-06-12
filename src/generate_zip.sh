@@ -8,6 +8,7 @@ source_code='
         P4.h P4.cpp
         P5.h P5.cpp
         P6.h P6.cpp
+        stack_utec.h queue_utec.h
   '
 rm -f ${project_name}.zip
 zip -r -S ${project_name} ${source_code}

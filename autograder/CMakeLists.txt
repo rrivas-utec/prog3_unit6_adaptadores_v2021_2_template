@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.20)
-project(poo2_unit6_adaptadores_poo_v2021_2_test)
+cmake_minimum_required(VERSION 3.10.2)
+project(prog3_unit6_adaptadores_v2021_2_test)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${OUTPUT_DEBUG})

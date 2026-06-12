@@ -12,6 +12,7 @@ source='cppcheck.cpp
   ../P4.h ../P4.cpp
   ../P5.h ../P5.cpp
   ../P6.h ../P6.cpp
+  ../stack_utec.h ../queue_utec.h
   '
 
 cppcheck ${source} -x c++ --enable=all --verbose --error-exitcode=1 --suppressions-list=suppressions.txt --check-config

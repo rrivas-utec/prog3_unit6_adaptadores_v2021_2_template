@@ -4,13 +4,13 @@
 #include "catch.hpp"
 #include "redirect_io.h"
 #include <string>
-#include <stack>
+#include "stack_utec.h"
 #include "P2.h"
 using namespace std;
 
 static void test_2() {
-    stack<int> stack_a;
-    stack<int> stack_b;
+    utec::stack<int> stack_a;
+    utec::stack<int> stack_b;
     int n {};
     cin >> n;
     while (n-- > 0) {

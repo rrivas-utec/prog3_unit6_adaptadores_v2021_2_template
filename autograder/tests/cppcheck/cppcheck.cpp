@@ -5,6 +5,8 @@
 #include "../P4.h"
 #include "../P5.h"
 #include "../P6.h"
+#include "../stack_utec.h"
+#include "../queue_utec.h"
 
 int main() {
     question_1();

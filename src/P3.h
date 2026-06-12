@@ -6,6 +6,4 @@
 #define POO2_UNIT6_ADAPTADORES_POO_V2021_2_P3_H
 
 
-void question_3();
-
 #endif //POO2_UNIT6_ADAPTADORES_POO_V2021_2_P3_H

@@ -4,7 +4,7 @@
 #include "catch.hpp"
 #include "redirect_io.h"
 #include <string>
-#include <stack>
+#include "stack_utec.h"
 #include <utility>
 #include "P6.h"
 using namespace std;
@@ -17,14 +17,14 @@ namespace test {
     public:
         student_t() = default;
         student_t(string name, string surname, double  grade):
-                name(std::move(name)), surname(surname), grade(grade) {}
+            name(std::move(name)), surname(surname), grade(grade) {}
         [[nodiscard]] string get_name() const { return name; }
         [[nodiscard]] string get_surname() const { return surname; }
         [[nodiscard]] double get_grade() const { return grade; }
     };
 }
 static void test_6() {
-    stack<test::student_t> s1;
+    utec::stack<test::student_t> s1;
     int n{};
     cin >> n;
     string nombre;

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10.2)
-project(poo2_unit6_adaptadores_poo_v2021_2)
+project(prog3_unit6_adaptadores_v2021_2)
 
 set(CMAKE_CXX_STANDARD 20)
 if(UNIX AND NOT APPLE)
@@ -22,4 +22,3 @@ if(UNIX AND NOT APPLE)
 endif()
 
 add_subdirectory(autograder)
-

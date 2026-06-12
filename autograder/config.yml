@@ -12,3 +12,5 @@ required_files:
   - P5.h
   - P6.cpp
   - P6.h
+  - stack_utec.h
+  - queue_utec.h

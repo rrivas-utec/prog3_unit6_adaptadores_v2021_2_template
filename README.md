@@ -4,18 +4,20 @@
 **cmake project:** poo2_unit6_adaptadores_poo_v2021_2
 ## Instructions
 
-## Question #1 - merge_stacks (3 points)
+Los adaptadores deben implementarse en `stack_utec.h` y `queue_utec.h` dentro del namespace `utec`.
+
+## Question #1 - merge_stacks (2 points)
 Elaborar un template de función `merge_stacks`, que dado 2 stacks genere la unión con valores intercalados como se muestra en el diagrama.
 ```cpp
-stack<T> merge_stacks(stack<T> a, stack<T> b);
+utec::stack<T> merge_stacks(utec::stack<T> a, utec::stack<T> b);
 ```
 
 ![img.png](img.png)
 
 **Casos de uso**
 ```cpp
-    stack<int> stack_a;
-    stack<int> stack_b;
+    utec::stack<int> stack_a;
+    utec::stack<int> stack_b;
     int n {};
     cin >> n;
     while (n-- > 0) {
@@ -38,20 +40,20 @@ stack<T> merge_stacks(stack<T> a, stack<T> b);
     }
 ```
 
-## Question #2 - join_stacks (3 points)
+## Question #2 - join_stacks (2 points)
 Elaborar un template de función `join_stacks`, donde
 dada 2 stacks genere la unión como se muestra en el
 diagrama.
 
 ```cpp
-stack<T> join_stacks(stack<T> a, stack<T> b);
+utec::stack<T> join_stacks(utec::stack<T> a, utec::stack<T> b);
 ```
 ![img_1.png](img_1.png)
 
 **Casos de uso**
 ```cpp
-stack<int> stack_a;
-stack<int> stack_b;
+utec::stack<int> stack_a;
+utec::stack<int> stack_b;
 int n {};
 cin >> n;
 while (n-- > 0) {
@@ -74,7 +76,7 @@ while (!stack_result.empty()) {
 }
 ```
 
-## Question #3 - process_text_by_stack (3 points)
+## Question #3 - process_text_by_stack (2 points)
 
 Elaborar una función que utilizando stack cumpla con las siguientes reglas:
 Una letra significa un `push` y un * significa un `pop`. Dada una secuencia de
@@ -99,7 +101,7 @@ getline(cin, text);
 cout << process_text_by_stack(text);
 ```
 
-## Question #4 - process_text_by_queue (3 points)
+## Question #4 - process_text_by_queue (2 points)
 Elaborar una función que utilizando queue cumpla con las siguientes reglas:
 
 Una letra significa un `push` y un * significa un `pop`. Dada una secuencia de
@@ -153,17 +155,17 @@ cout << boolalpha << is_equation_balanced(text);
 Utilizando la clase alumno_t que incluya los atributos `nombre, apellido y nota (int)`, se genere iterativamente. 
 Elaborar un template de función `find_in_stack` que permita ubicar un valor basado en cualquier criterio.
 ```cpp
-T find_in_stack(stack<T> s, function<bool(T)> cmpr);
+T find_in_stack(utec::stack<T> s, function<bool(T)> cmpr);
 ```
 
 ```cpp
-// Crear un stack basado en alumnos
+// Crear un stack basado en un deque de alumnos
 auto a1 = find_in_stack (stack, [](alumno_t a) { return a.apellido == "Perez"; });
 ```
 
 **Casos de uso**
 ```cpp
-stack<alumno_t> s1;
+utec::stack<alumno_t> s1;
 int n{};
 cin >> n;
 string nombre;
@@ -179,10 +181,9 @@ while (n-- > 0) {
 string name_tobe_found;
 get_line(cin, name_tobe_found);
 a1 = find_in_stack (s1, [=](auto a) { return a.get_nombre() == name_tobe_found; });
-cout << a1.get_nombre() << " " << a1.get_apellido() << " " << a1.get_nota() << endl;
 ```
 
-## Question #7 - complete_equation (Opcional)
+## Question #7 - complete_equation (4 points)
 
 Elaborar una función basada en stack que tome un expresión sin el paréntesis izquierdo y que retorne la expresión infijo con los paréntesis completos.
 
